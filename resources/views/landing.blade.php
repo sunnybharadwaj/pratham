@@ -32,7 +32,7 @@
 
     <div>
         <p class="inline-block emp mr-6">Sudhir Gupta</p>
-        <p class="inline-block emp mr-6">90141 02000‬</p>
+        <p class="inline-block emp mr-6">+91 90141 02000‬</p>
         <p class="inline-block emp">sudhir@prathamtrainers.co</p>
     </div>
 
