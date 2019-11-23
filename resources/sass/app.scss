@@ -1,20 +1,52 @@
+@import "tailwindcss/base";
+
+@import "tailwindcss/components";
+
+@import "tailwindcss/utilities";
+
+
 @import url('https://fonts.googleapis.com/css?family=Arimo:400,700&display=swap');
+
+//Variables
+$std-black: #272727;
+$low-black: #525252;
+$dark-gray: #58595B;
+
+$text-blue: #003962;
+$usable-green: #84C241;
+.usable-green {
+  color: $usable-green !important;
+}
+
+//Global Styles
 
 *, html, body {
   font-family: "Arimo", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: inherit;
   font-size: 18px;
+  color: $std-black;
+  letter-spacing: -0.03em;
 }
+
+.text-center {
+  text-align: center;
+}
+
 
 //Typography
 
 .h1 {
-
+  font-weight: bold;
+  font-size: 49px;
+  letter-spacing: -0.02em;
 }
 
 .h2 {
-
+  font-size: 35px;
+  color: $low-black;
+  line-height: 1.37;
+  letter-spacing: -0.03em;
 }
 
 .h3 {
@@ -22,10 +54,39 @@
 }
 
 p.emp {
+  font-weight: bold;
+  font-size: 25px;
+}
 
+.link {
+  font-size:  25px;
+  font-weight: bold;
+  padding-bottom: 2px;
+  border-bottom: 3px solid $text-blue;
+  transition: all 100ms ease-in-out;
+  color: $text-blue;
+  letter-spacing: -0.03em;
+
+  &:hover {
+    color: $text-blue;
+    border-bottom: 3px solid $usable-green;
+  }
 }
 
 p {
+  font-size: 18px;
+}
+
+//Footer
+footer {
+  position: fixed;
+  bottom:0;
+  left:0;
+  width: 100%;
+  background: #58595B;
+  p {
+    color: white !important;
+  }
 
 }
 
